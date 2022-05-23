@@ -1,0 +1,169 @@
+
+
+body {
+    background-color:hsl(233, 47%, 7%);
+    color:white;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    margin: 10%;
+    display: grid; 
+    grid-template-areas: ". img"
+    "one img"
+    ". img";
+    border-radius: 10px;
+}
+
+.flex {
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-item {
+    margin-right: 45px;
+}
+
+@media screen and (max-width: 700px) {
+.flex {
+    flex-direction: column;
+}
+
+.flex-item {
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+}
+
+
+
+h1 span {
+    color:hsl(277, 64%, 61%);
+}
+
+h1.main-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    max-width: 85%;
+}
+
+p.main-para {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color:hsla(0, 0%, 100%, 0.75);
+    margin: 0px;
+    margin-bottom: 40px;
+    padding:0px;
+    max-width: 85%;
+    line-height: 30px;
+}
+
+.grid-one {
+    grid-area: one;
+    margin: 8%;
+}
+
+.img2 {
+    display:none;
+}
+
+.overlay2 {
+    display:none;
+}
+
+.img {
+    grid-area: 1 / 2 / 4 / 3;
+    min-height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.overlay {
+    grid-area: 1 / 2 / 4 / 3;
+    min-height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background-color: hsl(277, 69%, 25%);
+    opacity: 0.5;
+    z-index: 10;
+}
+
+@media screen and (max-width: 700px) {
+    .img2 {
+        display:block;
+        grid-area: 1 / 1 / 2 / 2;
+        max-width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .overlay2 {
+        display:inline-block;
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: hsl(277, 69%, 25%);
+        opacity: 0.5;
+        z-index: 10;
+        max-width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .img {
+        display: none;
+    }
+    
+    .overlay {
+        display: none;
+    }
+
+    .grid-one {
+        margin-bottom: 0px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .flex {
+        align-items: center;
+        text-align: center;
+    }
+
+    h1.main-title,p.main-para {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+h2.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+p.text {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    color:hsla(0, 0%, 100%, 0.397);
+    padding: 0;
+    margin: 0;
+}
+
+.attribution {
+    font-size: 16px;
+    font-weight: 600px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:nth-child(1) {
+    margin-right: 20px;
+}
+
